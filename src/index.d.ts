@@ -18,7 +18,7 @@ export function getInitialURL(callback: (deepLink: string) => void): void;
  * @param {function(string)} callback - A callback that returns the formatted Braze push notification as a PushNotificationEvent.
  * If there is no push payload, returns null.
  */
-export function getInitialPushPayload(callback: (pushPayload: PushNotificationEvent) => void): void;
+export function getInitialPushPayload(callback: (pushPayload: PushNotificationEvent | null) => void): void;
 
 /**
  * @deprecated This method is deprecated in favor of `getDeviceId`.
